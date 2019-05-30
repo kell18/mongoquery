@@ -2,6 +2,7 @@ import ReleaseTransformations._
 
 lazy val root = project in file(".") aggregate(core, casbah, reactivemongo, scala_driver) settings(
   commonSettings,
+  name := s"mongoquery",
   publishSettings,
   publish := {},
   publishLocal := {},
@@ -44,7 +45,7 @@ lazy val scala_driver = (project in file("scala_driver"))
     commonSettings,
     publishSettings,
     releaseSettings,
-    libraryDependencies +="org.mongodb.scala" %% "mongo-scala-driver" % "2.6.0" % Provided
+    libraryDependencies += "org.mongodb.scala" %% "mongo-scala-driver" % "2.6.0" % Provided
   )
 
 lazy val reactivemongo = (project in file ("reactivemongo"))
@@ -99,7 +100,7 @@ lazy val publishSettings = Seq(
   pomExtra := <developers>
     <developer>
       <id>kell18</id>
-      <name>ALbert Bikeev</name>
+      <name>Albert Bikeev</name>
       <url>http://github.com/kell18</url>
     </developer>
   </developers>
