@@ -78,15 +78,15 @@ lazy val commonSettings = Seq(
 
 lazy val publishSettings = Seq(
   licenses += ("Apache 2.0 License", url("http://www.apache.org/licenses/LICENSE-2.0")),
-  homepage := Some(url("http://github.com/limansky/mongoquery")),
+  homepage := Some(url("http://github.com/kell18/mongoquery")),
   publishMavenStyle := true,
   Test / publishArtifact := false,
   organization := "com.github.limansky",
   scmInfo := Some(
     ScmInfo(
-      url("https://github.com/limansky/mongoquery"),
-      "scm:git:https://github.com/limansky/mongoquery.git",
-      Some("scm:git:git@github.com:limansky/mongoquery.git")
+      url("https://github.com/kell18/mongoquery"),
+      "scm:git:https://github.com/kell18/mongoquery.git",
+      Some("scm:git:git@github.com:kell18/mongoquery.git")
     )
   ),
   publishTo := {
@@ -98,9 +98,9 @@ lazy val publishSettings = Seq(
   },
   pomExtra := <developers>
     <developer>
-      <id>limansky</id>
-      <name>Mike Limansky</name>
-      <url>http://github.com/limansky</url>
+      <id>kell18</id>
+      <name>ALbert Bikeev</name>
+      <url>http://github.com/kell18</url>
     </developer>
   </developers>
 )
